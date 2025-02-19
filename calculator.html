@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculatorcs.css">
+</head>
+<body>
+    
+    <div id="main_block">
+        <h1>Calculator</h1>
+    <input type="text" name="text" id="input" readonly>
+
+    <div id="block">
+        <button class="button" id="operator" onclick="clearText()">AC</button>
+        <button class="button" id="operator" onclick="updateText('%')">%</button>
+        <button class="button" id="operator" onclick="removeLast()">C</button>
+        <button class="button" id="operator"onclick="updateText('/')">/</button>
+        <button class="button" onclick="updateText('7')">7</button>
+        <button class="button" onclick="updateText('8')">8</button>
+        <button class="button" onclick="updateText('9')">9</button>
+        <button class="button" id="operator" onclick="updateText('*')">*</button>
+        <button class="button" onclick="updateText('4')">4</button>
+        <button class="button" onclick="updateText('5')">5</button>
+        <button class="button" onclick="updateText('6')">6</button>
+        <button class="button" id="operator" onclick="updateText('-')">-</button>
+        <button class="button" onclick="updateText('1')">1</button>
+        <button class="button" onclick="updateText('2')">2</button>
+        <button class="button" onclick="updateText('3')">3</button>
+        <button class="button" id="operator"onclick="updateText('+')">+</button>
+        <button class="button" onclick="updateText('00')">00</button>
+        <button class="button" onclick="updateText('0')">0</button>
+        <button class="button" onclick="updateText('.')">.</button>
+        <button class="button" id="equals" onclick="calculate()">=</button>
+    </div>
+    </div>
+    <script src="calculatorjs.js"></script>
+    
+</body>
+</html>
